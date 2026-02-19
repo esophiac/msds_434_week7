@@ -99,7 +99,7 @@ func main() {
 	// Create new server and assign the router
 	server := http.Server{
 		Handler: router,
-		Addr:    ":9090",
+		Addr:    ":8080",
 	}
 
 	fmt.Println("Starting Product Catalog server on Port 9090")
