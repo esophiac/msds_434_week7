@@ -89,6 +89,13 @@ func CreateProductHandler() http.HandlerFunc {
 
 func main() {
 
+	// get the port from the environment variable
+	port := os.Getenv("PORT")
+
+	if port == "" {
+		port = "8080"
+	}
+
 	// create new router
 	router := mux.NewRouter()
 
